@@ -1,0 +1,79 @@
+---
+:custom_buttons_sets:
+- name: ServiceNow_CMDB|Vm|
+  description: ServiceNow_CMDB Management
+  set_type: CustomButtonSet
+  read_only: 
+  mode: 
+  custom_buttons:
+  - description: Update ServiceNow CMDB Record
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 14
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Update CMDB Record
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: 
+      ae_attributes:
+        request: servicenow_update_cmdb
+  - description: Create ServiceNow CMDB Record
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 15
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Create CMDB Record
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: 
+      ae_attributes:
+        request: servicenow_create_cmdb
+  - description: Delete ServiceNow CMDB Record
+    applies_to_class: Vm
+    applies_to_exp: 
+    options:
+      :button_image: 7
+      :display: true
+    userid: admin
+    wait_for_complete: 
+    name: Delete CMDB Record
+    visibility:
+      :roles:
+      - _ALL_
+    applies_to_id: 
+    resource_actions:
+      action: 
+      ae_namespace: SYSTEM
+      ae_class: PROCESS
+      ae_instance: Request
+      ae_message: 
+      ae_attributes:
+        request: servicenow_delete_cmdb
+  set_data:
+    :button_order:
+    - Create CMDB Record
+    - Update CMDB Record
+    - Delete CMDB Record
+    :button_image: 8
+    :display: true
+    :group_index: 7
