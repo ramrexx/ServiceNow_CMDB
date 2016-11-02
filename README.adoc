@@ -35,7 +35,7 @@ The purpose of this project is to provide a starting point for integrating Red H
 * <<Contribute>>
 
 == Overview
-COMING SOON!
+image:documentation/images/overview.png[link=documentation/images/overview.png]
 
 == Installation Steps
 
