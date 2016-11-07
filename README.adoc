@@ -57,7 +57,7 @@ IMPORTANT: You MUST have the link:https://github.com/rhtconsulting/cfme-rhconsul
 === Update Automate StateMachine
 
 * Log into your CloudForms/ManageIQ UI.
-* Navigate to Automate / ServiceNow_CMDB / Integration / StateMachines
+* Navigate to Automate / ServiceNow_CMDB / Integration / ServiceNow / CMDB / StateMachines
 ** Update the *StateMachine* class schema with your ServiceNow instance information (i.e. dev?????.service-now.com) and credentials.
 ** Add proxy_url if necessary.
 
